@@ -9,7 +9,7 @@ AppBar navBar() {
     elevation: 0,
     centerTitle: true,
     title: const Text(
-      'To Do',
+      'ToDo',
       style: TextStyle(
         color: tdBlack,
         fontSize: 20,
