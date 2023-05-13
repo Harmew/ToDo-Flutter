@@ -1,0 +1,10 @@
+^C:\USERS\DANNE\ONEDRIVE\ÁREA DE TRABALHO\HELLO_WORLD\BUILD\WINDOWS\CMAKEFILES\E9F4EBA0D5A6C2463D419473DAB0E24A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/danne/OneDrive/Área de Trabalho/hello_world/windows" "-BC:/Users/danne/OneDrive/Área de Trabalho/hello_world/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/danne/OneDrive/Área de Trabalho/hello_world/build/windows/hello_world.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
